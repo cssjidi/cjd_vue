@@ -1,0 +1,21 @@
+.wu_list{
+  text-align: center;
+  .wu_list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    padding:0.7rem 0.5rem 0.3rem;
+    border-bottom:1px solid #ccc;
+    height:2.4rem;
+  }
+  .flex-icon{
+    //flex:1;
+    margin-right: 0.5rem;
+  }
+  .wu_title{
+    flex:4;
+    text-align: left;
+    font-weight:500;
+  }
+}

@@ -1,0 +1,176 @@
+/*
+.wu_icon{
+  width: 2rem;
+  height: 2rem;
+  background:url('../../../assets/images/icon.png') center center;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 2rem 2rem;
+}
+*/
+@import "icon_font";
+
+[class^="wu-icon_"]:before, [class*=" wu-icon_"]:before {
+  margin: 0;
+}
+.wu-icon-success {
+  font-size: 23px;
+  color: #09BB07;
+}
+.wu-icon-waiting {
+  font-size: 23px;
+  color: #10AEFF;
+}
+.wu-icon-warn {
+  font-size: 23px;
+  color: #F43530;
+}
+.wu-icon-info {
+  font-size: 23px;
+  color: #10AEFF;
+}
+
+.wu-icon-success-circle {
+  font-size: 23px;
+  color: #09BB07;
+}
+.wu-icon-success-no-circle {
+  font-size: 23px;
+  color: #09BB07;
+}
+.wu-icon-waiting-circle {
+  font-size: 23px;
+  color: #10AEFF;
+}
+.wu-icon-circle {
+  font-size: 23px;
+  color: #C9C9C9;
+}
+.wu-icon-download {
+  font-size: 23px;
+  color: #09BB07;
+}
+
+.wu-icon-info-circle {
+  font-size: 23px;
+  color: #09BB07;
+}
+
+.wu-icon-safe-success {
+  color: #09BB07;
+}
+.wu-icon-safe-warn {
+  color: #FFBE00;
+}
+
+.wu-icon-cancel {
+  color: #F43530;
+  font-size: 22px;
+}
+
+.wu-icon-search {
+  color: #B2B2B2;
+  font-size: 14px;
+}
+
+.wu-icon-clear {
+  color: #B2B2B2;
+  font-size: 14px;
+}
+
+.wu-icon-delete {
+  &.wu-icon_gallery-delete{
+    color:#FFFFFF;
+    font-size:22px;
+  }
+}
+
+.wu-icon_msg {
+  font-size: 93px;
+  &.wu-icon-warn {
+    color: #F76260;
+  }
+}
+.wu-icon_msg-primary {
+  font-size: 93px;
+  &.wu-icon-warn {
+    color: #FFBE00;
+  }
+}
+
+
+.wu_icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image:url('assets/images/icon.png');
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.wu_icon-pencil{
+
+}
+.wu_icon-position{
+
+}
+.wu_icon-user{
+  //background-position: .1rem -4.75rem;
+  //background-size: 20rem 40rem;
+  background-position: 0rem -4.05rem;
+  background-size: 17rem 34rem;
+}
+.wu_icon-birthday{
+  background-position:0rem -7.3rem;
+  background-size: 17rem 34rem;
+}
+.wu_icon-tableware{
+  background-position: 0rem -13.3rem;
+  background-size: 17rem 34rem;
+}
+.wu_icon-car{
+  background-position: 0rem -10.4rem;
+  background-size: 17rem 34rem;
+}
+
+.wu_icon-fmale{
+  background-position: 0.3rem -27.3rem;
+  background-size: 20rem 40rem;
+}
+.wu_icon-male{
+  background-position: 0.3rem -25.9rem;;
+  background-size: 20rem 40rem;
+}
+.wu_icon-users-s{
+  background-position: 0.3rem -23.9rem;
+  background-size: 20rem 40rem;
+}
+.wu_icon-birthday-s{
+  background-position: 0.3rem -22.4rem;
+  background-size: 20rem 40rem;
+}
+.wu_icon-chicken{
+  background-position: 0.3rem -20.6rem;
+  background-size: 20rem 40rem;
+}
+.wu_icon-food{
+  background-position: 0.3rem -29rem;
+  background-size: 20rem 40rem;
+}
+.wu_icon_paper{
+}
+.wu_icon_calendar{
+}
+.wu_icon_flag{
+}
+.wu_icon_bag{
+
+}
+.wu_icon_message{
+
+}
+.wu_icon_movie{
+
+}
+.wu_icon_horn{
+
+}

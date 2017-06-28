@@ -1,0 +1,19 @@
+body{
+  overflow-x: hidden;
+  -webkit-overflow-scrolling : touch;
+}
+.flex-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.flex-item{
+  flex:1;
+}
+.flex-item-half{
+  flex:0 0 50%;
+}
+.flex-item-large{
+  flex:0 0 70%;
+}

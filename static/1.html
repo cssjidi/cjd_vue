@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+</head>
+<body id="box">
+    <p>啊手动阀士大夫爱的色放阿斯顿发生地方阿斯蒂芬阿迪斯发大水发阿斯蒂芬阿迪斯发撒地方阿斯顿发撒地方阿斯顿发大水发阿斯蒂芬阿迪斯发暗室逢灯阿斯顿发大水发爱的色放阿三地方阿斯蒂芬阿斯顿发射点发暗室逢灯阿三地方阿斯蒂芬阿斯顿发的是否阿斯蒂芬阿迪斯发的阿斯弗阿三地方阿斯蒂芬是</p>
+    <script>
+        var obj = document.getElementById('box');
+        obj.addEventListener('touchmove', function(event) {
+            // 如果这个元素的位置内只有一个手指的话
+            if (event.targetTouches.length == 1) {
+                event.preventDefault();// 阻止浏览器默认事件，重要
+                var touch = event.targetTouches[0];
+                // 把元素放在手指所在的位置
+                obj.style.left = touch.pageX-50 + 'px';
+                obj.style.top = touch.pageY-50 + 'px';
+                alert(213);
+            }
+        }, false);
+    </script>
+</body>
+</html>
