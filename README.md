@@ -1,6 +1,6 @@
 # vue + vuex (state management) + vux (UI framework)
 
-> csair ah system
+> vue demo
 
 ## Build Setup
 
