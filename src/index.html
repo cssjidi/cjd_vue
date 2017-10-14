@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>app</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+
+</head>
+<body>
+<div id="app"style="height: 100%;">
+</div>
+<script type="text/javascript">
+  function onReady() {
+    var bundle = document.createElement('script')
+    bundle.src = './bundle.js'
+    document.body.appendChild(bundle)
+  }
+  function onLoad() {
+    if (isApp)
+      document.addEventListener('deviceready', onReady, false)
+    else
+      onReady()
+  }
+  var ua = navigator.userAgent,
+    android = ua.match(/Android/),
+    ios = ua.match(/i(Phone|Pad|Pod)/),
+    webview = ua.match(/wv/),
+    version = ua.match(/Version/),
+    wechat = ua.match(/MicroMessenger/),
+    ios_cordova = ios && !version && !wechat,
+    android_cordova = android && webview && !wechat
+  var isApp = false
+  if (ios_cordova) {
+    document.write('<script src="static/cordova/cordova_ios.js"></scr' + 'ipt>')
+    isApp = true
+  } else if (android_cordova) {
+    document.write('<script src="static/cordova/cordova_android.js"></scr' + 'ipt>')
+    isApp = true
+  }
+  window.onload = onLoad()
+  var wH = window.innerHeight > 0 ? window.innerHeight : document.documentElement.clientHeight;
+  document.body.style.height = wH + 'px';
+</script>
+</body>
+</html>

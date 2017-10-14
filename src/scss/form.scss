@@ -1,0 +1,43 @@
+.form-control{
+  border:1px solid #dfdfdd;
+  height:1.6rem;
+  line-height: 1.6rem;
+  width: 100%;
+  font-size:0.5rem;
+}
+input[type="text"],input[type="number"]{
+  height:1.42rem;
+  padding-left:0.1rem;
+}
+.form-control-radius{
+  border-radius:5px;
+}
+.btn{
+  height:1.6rem;
+  width:100%;
+  padding:0.1rem 0.2rem;
+  border:1px solid #76c06b;
+  color:#fff;
+  font-size:0.6rem;
+}
+.btn-radius{
+  border-radius: 5px;
+}
+.btn-primary{
+  background:#76c06b;
+}
+.icon-in-left{
+  position: absolute;
+  top: 1rem;
+  margin-left: .2rem;
+  font-size: 0.7rem !important;
+  color: #888;
+  font-weight: normal;
+}
+.icon-in-right{
+   position: absolute;
+   top: 0.9rem;
+   margin-left: 7.5rem;
+   font-size: 0.5rem;
+   color: #888;
+ }

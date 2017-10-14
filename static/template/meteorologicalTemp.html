@@ -1,0 +1,211 @@
+<script  id="noticeTemplate" type="text/x-jquery-tmpl">
+
+<%_.each(list,function(data){ 
+console.info("sssssssssssss");
+var s=data.optTxt.substr(0,6);
+var colorType=null;
+console.info(s);
+if (s===" SPECI") {
+
+colorType= "colortype7";
+}
+else{
+
+  colorType= "colortype3";
+}
+
+  %>
+<table style="width:100%" class="ItemBlocks2 <%= colorType %> sizenumber2">
+<tr>
+<td >
+<span >&nbsp;&nbsp;<%= data.optTxt %> </span>
+</td>
+</tr>
+</table>
+
+   <%})%>
+</script>
+
+
+<script type="text/x-underscore-template">
+//put your template here
+</script>
+
+
+<script id="recommendTemplate" type="text/x-jquery-tmpl">
+
+<%var vipInfos=function(ranklist){
+
+
+var ranks="";
+  if (ranklist) {
+
+var arr=ranklist.split("&nbsp;");
+
+
+
+for (var i = 0; i < arr.length-1; i++) {
+
+
+  if (i===arr.length-2) {
+
+ranks=ranks+arr[i];
+
+console.info("nbsp"+i+"-----------"+arr.length+";;;;;;;;;;;;"+arr[i]);
+  }else{
+console.info("nbspsssssssssssss");
+ranks=ranks+arr[i]+ "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+
+}
+}
+}else{
+
+  ranks="";
+}
+
+return ranks;
+
+}%>
+<dl class="list-st">
+<dd >
+
+    <h4 class="cspp wih97">
+        <span class="text-left wih50"><%=fltNr%></span>
+        <span class="text-left wih40" style="word-break:break-all;"><%=lang.delay_time%>:<font class="colortype7"><%=delay%></font><% if(delay!=""){ %><%=lang.minute%><%}%></span>
+    </h4>
+  
+    <h4 class=" cspp wih97 lin-24 text-base ">
+        <span class="text-left wih50" style="word-break:break-all;"><%=lang.door_closed_time%>:<%=(acars) ? acars.substr(8,15) : acars //flightInfoData
+     %></span>
+        <span class="text-left wih45"><%=lang.transit_number%>:<%=transInfo%></span>
+      </h4>
+      <hr>
+        <h4 class="text-gray wih97" style="word-break:break-all;">VIP:<span><%=vipInfos(vipInfo)%></span></h4>
+    <p class="vi-cen"><i></i></p>
+</dd>
+</dl>
+
+
+</script>
+
+
+
+<script id="vipTemplate" type="text/x-jquery-tmpl">
+
+
+<%var vipInfos=function(ranklist){
+
+ 
+var ranks="";
+  if (ranklist) {
+
+    var arr=ranklist.split("&nbsp;");
+
+//arr是一个包含字符值”jpg”、”bmp”、”gif”、”ico”和”png”的数组
+
+
+for (var i = 0; i < arr.length-1; i++) {
+
+  if (i===arr.length-2) {
+
+     ranks=ranks+arr[i];
+  }else{
+
+      ranks=ranks+arr[i]+ "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+
+  } 
+  }
+}else{
+
+  ranks="";
+}
+
+return ranks;
+}%>
+<dl class="list-st">
+<dd >
+
+    <h4 class="cspp wih97">
+        <span class="text-left wih50"><%=fltNr%></span>
+        <span class="text-left wih40" style="word-break:break-all;"><%=latestDepArpCd%>-<%=latestArvArpCd%></span>
+    </h4>
+  
+    <h4 class=" cspp wih97 lin-24 text-base ">
+        <span class="text-left wih50" style="word-break:break-all;"><%=lang.plan_take_off%>:<%=(schDepDt) ? schDepDt.substr(8,15) : schDepDt %></span>
+        <span class="text-left wih40"><%=lang.delay_time%>:<font class="colortype7" ><%=delay%></font><%=lang.minute%></span>
+      </h4>
+      <hr>
+        <h4 class="text-gray wih97" style="word-break:break-all;">VIP:<span><%=vipInfos(vipInfo)%></span></h4>
+    <p class="vi-cen"><i></i></p>
+</dd>
+</dl>
+
+</script>
+
+
+
+<script id="delaysTemplate" type="text/x-jquery-tmpl">
+
+<dl class="list-st">
+<dd >
+
+    <h4 class="cspp wih97">
+        <span class="text-left wih50"><%=fltNr%></span>
+        <span class="text-left wih40" style="word-break:break-all;"><%=latestDepArpCd%>-<%=latestArvArpCd%></span>
+    </h4>
+  
+    <h4 class=" cspp wih97 lin-24 text-base ">
+        <span class="text-left wih50" style="word-break:break-all;"><%=lang.plan_take_off%>:<%=(schDepDt) ? schDepDt.substr(8,15) : schDepDt %></span>
+        <span class="text-left wih40"><%=lang.delay_time%>:<font class="colortype7" ><%=delay%></font><%=lang.minute%></span>
+      </h4>
+      <hr>
+      <p class="vi-cen"><i></i></p>  
+</dd>
+</dl>
+
+</script>
+
+
+
+<script id="hatchTemplate" type="text/x-jquery-tmpl">
+<dl class="list-st">
+<dd >
+
+    <h4 class="cspp wih97">
+        <span class="text-left wih100"><%=fltNr%></span>
+    </h4>
+  
+    <h4 class=" cspp wih97 lin-24 text-base ">
+        <span class="text-left wih40" style="word-break:break-all;"><%=latestDepArpCd%>-<%=latestArvArpCd%></span>
+        <span class="text-left wih50"><%=lang.door_closed_time%>:<font class="colortype7" ><%=acars.substr(8,15)%></font></span>
+      </h4>
+      <hr>
+       <p class="vi-cen"><i></i></p> 
+</dd>
+</dl>
+
+</script>
+
+
+<script id="secondaryTemplate" type="text/x-jquery-tmpl">
+<dl class="list-st">
+<dd >
+
+    <h4 class="cspp wih97">
+        <span class="text-left wih50"><%=fltNr%></span>
+        <span class="text-left wih40" style="word-break:break-all;"><%=latestDepArpCd%>-<%=latestArvArpCd%></span>
+    </h4>
+  
+    <h4 class=" cspp wih97 lin-24 text-base ">
+        <span class="text-left wih50" style="word-break:break-all;"><%=lang.transit_number%>: <font class="colortype5"><%=trsPsgCount%></font></span>
+        <span class="text-left wih40"><%=lang.transfer_to%>:<font class=""><%=trsFltCount%></font><%=lang.flight%></span>
+      </h4>
+      <hr>
+       <p class="vi-cen"><i></i></p> 
+</dd>
+</dl>
+</script>
+
+
+
+

@@ -1,0 +1,13 @@
+@import "variable";
+html{font-size:60px;}
+body{font-size:24px;}
+@each $device,$size in $devices{
+  @media screen and (min-width:$device+'px' ){
+    body{
+      font-size:#{$size}px;
+    }
+    html{
+      font-size:#{$device/12.5}px;
+    }
+  }
+}

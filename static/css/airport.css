@@ -1,0 +1,182 @@
+#ariport-main .item-content{
+        font-size: 14px;
+        color: black;
+    }
+#ariport-main .default {
+    background: url(../images/weather/default.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .baoxue {
+    background: url(../images/weather/baoxue.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .bingbao {
+    background: url(../images/weather/bingbao.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .chen {
+    background: url(../images/weather/chen.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .duoyun {
+    background: url(../images/weather/duoyun.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .fengchuiqidechen {
+    background: url(../images/weather/fengchuiqidechen.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .fengsha {
+    background: url(../images/weather/fengsha.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .huoshan {
+    background: url(../images/weather/huoshan.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .leibing {
+    background: url(../images/weather/leibing.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .leiyu {
+    background: url(../images/weather/leiyu.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .leiyuxue {
+    background: url(../images/weather/leiyuxue.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .longjuanfeng {
+    background: url(../images/weather/longjuanfeng.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .loudouzhuangyun {
+    background: url(../images/weather/loudouzhuangyun.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .mai {
+    background: url(../images/weather/mai.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .maomaoyu {
+    background: url(../images/weather/maomaoyu.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .putongchenbao {
+    background: url(../images/weather/putongchenbao.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .shaoyun {
+    background: url(../images/weather/shaoyun.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .wanliwuyun {
+    background: url(../images/weather/wanliwuyun.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+#ariport-main .wu {
+    background: url(../images/weather/wu.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .xiaobingbao {
+    background: url(../images/weather/xiaobingbao.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .xiaoxue {
+    background: url(../images/weather/xiaoxue.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .xue {
+    background: url(../images/weather/xue.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .xuefeng {
+    background: url(../images/weather/xuefeng.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .yu {
+    background: url(../images/weather/yu.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .yunlei {
+    background: url(../images/weather/yunlei.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .yuxue {
+    background: url(../images/weather/yuxue.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .zhenxue {
+    background: url(../images/weather/zhenxue.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main .zhenyu {
+    background: url(../images/weather/zhenyu.ing);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#ariport-main ..footbox{
+    font-size: 12px;
+    height: 39px;
+}
+#ariport-main .inoutboundbg {
+    /*background-color: #005AAA;
+        border: 2px solid #004AAA;
+        padding-bottom:2px !important;
+        padding-top:2px !important;*/
+    
+    background: url(../images/air_background.ing);
+    background-size: 44px 60px;
+}
+#flightBox {
+    width: 100%;
+    height: 46px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#menuBox {
+    position: absolute;
+    top: -5px;
+    left: 0px;
+}
+#recommendlist, #vipList, #delayslist, #hatchList, #secondaryList, #recommendlist ul, #vipList ul, #delayslist ul, #hatchList ul, #secondaryList ul, #recommendlist ul li, #vipList ul li, #delayslist ul li, #hatchList ul li, #secondaryList ul li, #recommendlist div, #vipList div, #delayslist div, #hatchList div, #secondaryList div, #recommend, #recommend div {
+    display: block;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* Chrome 和 Safari */
+    
+    -moz-backface-visibility: hidden;
+    /* Firefox */
+    
+    -ms-backface-visibility: hidden;
+    /* Internet Explorer */
+}
